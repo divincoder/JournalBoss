@@ -60,7 +60,8 @@ public class AddEntryActivity extends AppCompatActivity implements
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_entry);
-
+        //Initialize the ROOM Database
+        mDb = AppDatabase.getInstance(getApplicationContext());
         initViews();
 
         if (savedInstanceState != null && savedInstanceState.containsKey(INSTANCE_TASK_ID)) {
@@ -92,9 +93,6 @@ public class AddEntryActivity extends AppCompatActivity implements
         }
         //mTaskId = getIntent().getIntExtra("id", -1);
         //Initialized the views
-
-        //Initialize the ROOM Database
-        mDb = AppDatabase.getInstance(this);
 
         //firebase parameters
         mFirebaseAuth = FirebaseAuth.getInstance();

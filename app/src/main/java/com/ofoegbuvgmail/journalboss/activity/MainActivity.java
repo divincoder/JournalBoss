@@ -163,8 +163,8 @@ public class MainActivity extends AppCompatActivity implements UserDB.UserSignou
     @Override
     public void onItemClickListener(int itemId) {
         // Launch JournalDetailActivity adding the itemId as an extra in the intent
-        Intent intent = new Intent(MainActivity.this, JournalDetailActivity.class);
-        //intent.putExtra(JournalDetailActivity.EXTRA_TASK_ID, itemId);
+        Intent intent = new Intent(MainActivity.this, AddEntryActivity.class);
+        intent.putExtra(AddEntryActivity.EXTRA_TASK_ID, itemId);
         startActivity(intent);
     }
 }
