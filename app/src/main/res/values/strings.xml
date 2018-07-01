@@ -8,4 +8,10 @@
     <string name="entered_on">Entered on</string>
     <string name="at">at</string>
     <string name="entry_detail">Entry Detail</string>
+    <string name="entry_heading">Entry Heading</string>
+    <string name="entry_description">Entry Description</string>
+    <string name="update_entry">Update Entry</string>
+    <string name="set_date">Set Date</string>
+    <string name="set_time">Set Time</string>
+    <string name="save_entry">Save Entry</string>
 </resources>

@@ -11,11 +11,11 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".activity.MainActivity"
-            android:theme="@style/AppTheme.NoActionBar">
-        </activity>
-        <activity android:name=".activity.JournalDetailActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.JournalDetailActivity"
             android:label="@string/entry_detail"
-            android:parentActivityName=".activity.MainActivity"/>
+            android:parentActivityName=".activity.MainActivity" />
         <activity
             android:name=".activity.AuthenticationActivity"
             android:theme="@style/AppTheme.Auth">
@@ -29,6 +29,11 @@
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
+
+        <activity
+            android:name=".activity.AddEntryActivity"
+            android:label="@string/update_entry"
+            android:parentActivityName=".activity.JournalDetailActivity" />
     </application>
 
 </manifest>

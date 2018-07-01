@@ -98,7 +98,7 @@ public class MainActivity extends AppCompatActivity implements UserDB.UserSignou
 
         FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(view -> {
-            Intent intent = new Intent(MainActivity.this, JournalDetailActivity.class);
+            Intent intent = new Intent(MainActivity.this, AddEntryActivity.class);
             startActivity(intent);
 
         });
